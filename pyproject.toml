@@ -1,0 +1,19 @@
+[project]
+name = "notjakesimonds"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "aiohttp>=3.12.14",
+    "fastapi>=0.116.1",
+    "flask>=3.1.1",
+    "google-api-python-client>=2.176.0",
+    "google-auth>=2.40.3",
+    "google-auth-httplib2>=0.2.0",
+    "google-auth-oauthlib>=1.2.2",
+    "python-dotenv>=1.1.1",
+    "requests>=2.32.4",
+    "slack-sdk>=3.36.0",
+    "uvicorn>=0.35.0",
+]
