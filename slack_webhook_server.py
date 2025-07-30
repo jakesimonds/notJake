@@ -51,7 +51,8 @@ def send_reply(channel_id, thread_ts):
     
     payload = {
         'channel': channel_id,
-        'text': reply_text
+        'text': reply_text,
+        'thread_ts': thread_ts  # This makes it reply in thread
     }
     
     try:
@@ -73,4 +74,4 @@ if __name__ == "__main__":
     print("🚀 Starting Slack Webhook Server")
     print("📡 Server will be available at: http://localhost:8000/slack/events")
     print("🔗 Use ngrok to expose this URL to Slack")
-    uvicorn.run(app, host="0.0.0.0", port=8000) 
+    uvicorn.run(app, host="0.0.0.0", port=8001) 
